@@ -1,0 +1,4 @@
+configKubernetes:
+  spilo_runasuser: 101
+  spilo_runasgroup: 103
+  spilo_fsgroup: 103
