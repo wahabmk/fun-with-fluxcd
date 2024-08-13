@@ -1,0 +1,9 @@
+# flux create source helm msr-repo --url=https://registry.mirantis.com/charts/msr/msr --namespace=msr --export > msr-helm-repo.yaml
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: msr-repo
+  namespace: msr
+spec:
+  interval: 1m0s
+  url: https://registry.mirantis.com/charts/msr/msr
