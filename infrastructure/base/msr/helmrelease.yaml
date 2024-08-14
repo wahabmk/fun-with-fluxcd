@@ -15,6 +15,10 @@ spec:
       name: msr-values
       valuesKey: values.yaml
       optional: true
+  timeout: 10m
   interval: 1h
+  install:
+    remediation:
+      retries: 10
   releaseName: msr
   targetNamespace: msr
