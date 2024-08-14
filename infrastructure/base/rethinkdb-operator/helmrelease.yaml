@@ -18,3 +18,7 @@ spec:
   interval: 1h
   releaseName: rethinkdb-operator
   targetNamespace: rethinkdb-operator
+  install:
+    disableWait: true
+  upgrade:
+    disableWait: true
