@@ -1,0 +1,4 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - https://gist.githubusercontent.com/wahabmk/d74f3263b18b967f9a697c6aec088cc7/raw/09cd4949a9a5c9511b50d95a5aa95d2df0fa688b/rethinkdb-operator-1.0.1.yaml
