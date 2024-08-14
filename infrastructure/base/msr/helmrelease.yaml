@@ -8,7 +8,7 @@ spec:
       chart: msr
       sourceRef:
         kind: HelmRepository
-        name: msrofficial
+        name: msrdev
         namespace: flux-system
   valuesFrom:
     - kind: ConfigMap

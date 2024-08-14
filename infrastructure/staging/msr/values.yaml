@@ -1,8 +1,16 @@
-## This file sets values that allow installing MSR on ARM nodes of a Kubernetes cluster.
-
 global:
   nodeSelector:
     kubernetes.io/arch: arm64
+    kubernetes.io/os: linux
+
+rethinkdb:
+  admin:
+    service:
+      enabled: true
+  cli:
+    enabled: true
+    ## TODO: Update this image ref to an official one once available.
+    image: msr.ci.mirantis.com/msr/rethinkdb-cli:3.0
 
 # postgres-operator doesn't expose "nodeSelector" for pods, but does expose "nodeAffinity".
 # Thus, a separate approach for this workload.

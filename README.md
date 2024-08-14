@@ -19,7 +19,7 @@ flux bootstrap git \
 --token-auth=true \
 --url=https://github.com/wahabmk/fun-with-fluxcd \
 --username=wahabmk \
---password=<PAT> \
+--password=$GITHUB_PAT \
 --branch=main \
 --path=clusters/staging \
 --verbose
