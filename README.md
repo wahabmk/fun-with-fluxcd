@@ -1,6 +1,7 @@
 # fluxcd-practice
 
-If repo doesn't exist:
+## To Deploy
+To deploy staging, run the following if repo doesn't exist:
 ```sh
 flux bootstrap github \
 --token-auth \
@@ -12,7 +13,7 @@ flux bootstrap github \
 --verbose
 ```
 
-If repo already exists then:
+If repo already exists then run:
 ```sh
 flux bootstrap git \
 --token-auth=true \
@@ -23,3 +24,6 @@ flux bootstrap git \
 --path=clusters/staging \
 --verbose
 ```
+
+## Miscellaneous
+1. There is nothing special needed to upgrade CRDs. To upgrade a CRD just bump its version and push the commit and flux will do the rest.
