@@ -2,3 +2,8 @@ rethinkdb:
   cli:
     enabled: true
     image: msr.ci.mirantis.com/msr/rethinkdb-cli:3.0
+
+global:
+  nodeSelector:
+    kubernetes.io/arch: arm64
+    kubernetes.io/os: linux
