@@ -1,0 +1,15 @@
+kind: Deployment
+metadata:
+  name: all
+spec:
+  template:
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: sharding.fluxcd.io/key
+                  operator: In
+                  values:
+                    - shard3

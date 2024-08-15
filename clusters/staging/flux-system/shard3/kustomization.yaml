@@ -80,3 +80,7 @@ patches:
       - op: add
         path: /spec/template/spec/containers/0/args/-
         value: --watch-label-selector=sharding.fluxcd.io/key=shard3    
+  - target:
+      kind: Deployment
+      name: (source-controller|kustomize-controller|helm-controller)
+    path: nodeaffinity-patch.yaml
