@@ -5,6 +5,7 @@ resources:
   - gotk-sync.yaml
   - shard1
   - shard2
+  - shard3
 patches:
   - target:
       kind: Deployment
